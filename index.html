@@ -353,6 +353,165 @@
             margin-bottom: 1rem;
         }
         
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 5rem 0;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            padding-right: 2rem;
+        }
+        
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        
+        .about-image {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            border-radius: 1.5rem;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            color: white;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(to bottom, #2c3e50, #0A0A0A);
+            padding: 5rem 0;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: #e74c3c;
+            width: 60px;
+            text-align: center;
+        }
+        
+        .contact-details h3 {
+            margin-bottom: 0.5rem;
+            color: #e74c3c;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: #34495e;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: #e74c3c;
+            transform: translateY(-3px);
+        }
+        
+        .contact-form {
+            background: #2c3e50;
+            padding: 2rem;
+            border-radius: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #bdc3c7;
+        }
+        
+        .form-control {
+            width: 100%;
+            background: #34495e;
+            border: 1px solid #34495e;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #e74c3c;
+            background: #2c3e50;
+        }
+        
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
         /* Infinity Scroll */
         .scroll-wrapper {
             position: relative;
@@ -516,15 +675,6 @@
             margin-bottom: 0.5rem;
         }
         
-        .form-control {
-            width: 100%;
-            background-color: #34495e;
-            border: 1px solid #34495e;
-            border-radius: 0.5rem;
-            padding: 0.75rem 1rem;
-            color: white;
-        }
-        
         .login-options {
             display: flex;
             justify-content: space-between;
@@ -677,6 +827,70 @@
             background-color: #34495e;
         }
         
+        /* Footer */
+        .footer {
+            background: #0A0A0A;
+            padding: 3rem 0 2rem;
+            border-top: 1px solid #2c3e50;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo-img {
+            height: 40px;
+            width: auto;
+            border-radius: 6px;
+        }
+        
+        .footer-text {
+            color: #bdc3c7;
+            line-height: 1.6;
+        }
+        
+        .footer-heading {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #e74c3c;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2c3e50;
+            color: #7f8c8d;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -711,9 +925,19 @@
                 display: none !important;
             }
             
-            .design-container {
+            .design-container,
+            .about-content,
+            .contact-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+            }
+            
+            .about-text {
+                padding-right: 0;
+            }
+            
+            .about-features {
+                grid-template-columns: 1fr;
             }
             
             .flower-preview {
@@ -728,6 +952,11 @@
             .color-option {
                 width: 50px;
                 height: 50px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
         }
     </style>
@@ -882,6 +1111,216 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="font-serif">Về BloomGarden</h2>
+                <p>Hành trình lan tỏa yêu thương qua từng đóa hoa</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="font-serif" style="font-size: 2rem; margin-bottom: 1.5rem; color: #e74c3c;">Sứ Mệnh Của Chúng Tôi</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8;">
+                        BloomGarden được sinh ra từ niềm đam mê bất tận với vẻ đẹp thuần khiết của thiên nhiên 
+                        và khát khao mang đến những tác phẩm nghệ thuật từ hoa tươi, giúp kết nối những trái tim 
+                        và trao gửi yêu thương.
+                    </p>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.8;">
+                        Mỗi bó hoa của BloomGarden không chỉ là sự kết hợp của những bông hoa tươi nhất, 
+                        mà còn là câu chuyện, là thông điệp tình cảm được gửi gắm qua từng cánh hoa, 
+                        từng chi tiết trang trí tinh tế.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Tận Tâm</h4>
+                            <p>Mỗi sản phẩm đều được chăm chút tỉ mỉ với tình yêu nghề</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>Chất Lượng</h4>
+                            <p>Hoa tươi nhập khẩu và nội địa chất lượng cao nhất</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Sáng Tạo</h4>
+                            <p>Thiết kế độc đáo, không ngừng đổi mới và sáng tạo</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Uy Tín</h5>
+                            <p>Cam kết mang đến trải nghiệm tốt nhất cho khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <i class="fas fa-seedling"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="font-serif">Liên Hệ Với Chúng Tôi</h2>
+                <p>Hãy để chúng tôi giúp bạn trao gửi yêu thương</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Địa Chỉ</h3>
+                            <p>HUBT Hà Nội</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Điện Thoại</h3>
+                            <p>0379 346 540</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>datbn1109@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Theo Dõi Chúng Tôi</h3>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/datintrustforlove" class="social-link" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ng_tadeht/" class="social-link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; color: #e74c3c;">Gửi Tin Nhắn Cho Chúng Tôi</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số Điện Thoại</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Lời Nhắn</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="image/BloomGarden Floral Business Logo.png" alt="BloomGarden Logo" class="footer-logo-img">
+                        <div>
+                            <h3 class="font-serif" style="color: white; margin: 0;">BLOOMGARDEN</h3>
+                            <span style="color: #e74c3c; font-size: 0.8rem;">FLORAL DESIGN</span>
+                        </div>
+                    </div>
+                    <p class="footer-text">
+                        BloomGarden - Nơi kết nối yêu thương qua từng đóa hoa. 
+                        Chúng tôi mang đến những tác phẩm nghệ thuật từ hoa tươi, 
+                        giúp bạn trao gửi những thông điệp ý nghĩa nhất.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Liên Kết Nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#products">Sản Phẩm</a></li>
+                        <li><a href="#design">Tự Thiết Kế</a></li>
+                        <li><a href="#about">Về Chúng Tôi</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Dịch Vụ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Hoa Sinh Nhật</a></li>
+                        <li><a href="#">Hoa Khai Trương</a></li>
+                        <li><a href="#">Hoa Cưới</a></li>
+                        <li><a href="#">Hoa Sự Kiện</a></li>
+                        <li><a href="#">Hoa Theo Tháng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Hỗ Trợ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                        <li><a href="#">Chính Sách Giao Hàng</a></li>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="#">Bảo Mật Thông Tin</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 BloomGarden. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Login Modal -->
     <div class="modal" id="loginModal">
         <div class="modal-content">
@@ -910,4 +1349,497 @@
                         <i class="fab fa-google"></i> Google
                     </button>
                     <button type="button" class="social-btn">
-                        <
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </button>
+                </div>
+                
+                <div class="signup-link">
+                    Chưa có tài khoản? <a href="#">Đăng ký ngay</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeCart">&times;</span>
+            <h2 class="modal-title font-serif">Giỏ hàng</h2>
+            <div id="cartItems">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <span id="cartTotal">0₫</span>
+            </div>
+            <button class="btn btn-primary w-100 mt-4">Thanh toán</button>
+        </div>
+    </div>
+
+    <script>
+        // Product data
+        const products = [
+            { id: 1, name: "Bó Hồng Đỏ Classic", price: 450000, description: "Bó hoa hồng đỏ 20 bông kèm lá phụ kiện sang trọng", badge: "Bán chạy" },
+            { id: 2, name: "Hộp Hoa Luxury", price: 650000, description: "Hộp gỗ đựng 12 bông hồng cao cấp với phụ kiện sang trọng" },
+            { id: 3, name: "Bó Hoa Cẩm Chướng", price: 380000, description: "Bó hoa cẩm chướng nhiều màu phối lá xanh tươi tắn" },
+            { id: 4, name: "Bó Hoa Hướng Dương", price: 420000, description: "Bó hoa hướng dương tươi sáng kết hợp hoa phụ màu vàng cam" },
+            { id: 5, name: "Giỏ Hoa Lavender", price: 550000, description: "Giỏ hoa lavender thơm ngát kết hợp với hoa baby trắng" },
+            { id: 6, name: "Bó Hoa Cúc Họa Mi", price: 320000, description: "Bó hoa cúc họa mi tinh khôi, thanh khiết và nhẹ nhàng" }
+        ];
+
+        // Cart data
+        let cart = [];
+        let wishlist = [];
+
+        // Design data
+        let currentDesign = {
+            color: 'red',
+            flowerType: 'rose',
+            price: 450000
+        };
+
+        // DOM Elements
+        const productScroll = document.getElementById('productScroll');
+        const loginModal = document.getElementById('loginModal');
+        const cartModal = document.getElementById('cartModal');
+        const loginToggle = document.getElementById('loginToggle');
+        const cartToggle = document.getElementById('cartToggle');
+        const closeLogin = document.getElementById('closeLogin');
+        const closeCart = document.getElementById('closeCart');
+        const cartItems = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+        const cartCount = document.querySelector('.cart-count');
+        const searchToggle = document.getElementById('searchToggle');
+        const searchContainer = document.getElementById('searchContainer');
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+
+        // Design Elements
+        const flowerPreview = document.getElementById('flowerPreview');
+        const flowerIcon = document.getElementById('flowerIcon');
+        const designTitle = document.getElementById('designTitle');
+        const designDescription = document.getElementById('designDescription');
+        const designPrice = document.getElementById('designPrice');
+        const addDesignToCart = document.getElementById('addDesignToCart');
+        const colorOptions = document.querySelectorAll('.color-option');
+        const flowerTypes = document.querySelectorAll('.flower-type');
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProducts();
+            setupEventListeners();
+            setupInfinityScroll();
+            setupDesignSection();
+        });
+
+        // Setup design section
+        function setupDesignSection() {
+            // Color selection
+            colorOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    colorOptions.forEach(opt => opt.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const color = this.getAttribute('data-color');
+                    const colorName = this.getAttribute('data-name');
+                    const colorDesc = this.getAttribute('data-desc');
+                    
+                    currentDesign.color = color;
+                    updateDesignPreview();
+                });
+            });
+
+            // Flower type selection
+            flowerTypes.forEach(type => {
+                type.addEventListener('click', function() {
+                    flowerTypes.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const flowerType = this.getAttribute('data-type');
+                    const price = parseInt(this.getAttribute('data-price'));
+                    const flowerName = this.getAttribute('data-name');
+                    
+                    currentDesign.flowerType = flowerType;
+                    currentDesign.price = price;
+                    updateDesignPreview();
+                });
+            });
+
+            // Add design to cart
+            addDesignToCart.addEventListener('click', function() {
+                addDesignToCartHandler();
+            });
+        }
+
+        // Update design preview
+        function updateDesignPreview() {
+            // Update background color
+            const activeColor = document.querySelector('.color-option.active');
+            flowerPreview.style.background = activeColor.style.background;
+            
+            // Update flower icon based on type
+            const icons = {
+                'rose': 'fas fa-rose',
+                'lily': 'fas fa-spa',
+                'sunflower': 'fas fa-sun',
+                'tulip': 'fas fa-seedling'
+            };
+            flowerIcon.className = icons[currentDesign.flowerType] || 'fas fa-rose';
+            
+            // Update text
+            const colorName = activeColor.getAttribute('data-name');
+            const colorDesc = activeColor.getAttribute('data-desc');
+            const activeFlower = document.querySelector('.flower-type.active');
+            const flowerName = activeFlower.getAttribute('data-name');
+            
+            designTitle.textContent = `Bó ${flowerName} ${colorName}`;
+            designDescription.textContent = `${flowerName} ${colorName.toLowerCase()} - ${colorDesc}`;
+            designPrice.textContent = `${currentDesign.price.toLocaleString()}₫`;
+        }
+
+        // Add design to cart
+        function addDesignToCartHandler() {
+            const activeColor = document.querySelector('.color-option.active');
+            const activeFlower = document.querySelector('.flower-type.active');
+            
+            const colorName = activeColor.getAttribute('data-name');
+            const flowerName = activeFlower.getAttribute('data-name');
+            
+            const designProduct = {
+                id: Date.now(), // Unique ID for custom design
+                name: `[Tự Thiết Kế] Bó ${flowerName} ${colorName}`,
+                price: currentDesign.price,
+                quantity: 1,
+                custom: true
+            };
+
+            // Add to cart
+            cart.push(designProduct);
+            updateCartCount();
+            
+            // Show confirmation
+            alert(`Đã thêm "${designProduct.name}" vào giỏ hàng!`);
+        }
+
+        // Render products to the page
+        function renderProducts() {
+            productScroll.innerHTML = '';
+            
+            // Clone products for infinite scroll effect
+            const allProducts = [...products, ...products, ...products];
+            
+            allProducts.forEach(product => {
+                const productEl = document.createElement('div');
+                productEl.className = 'scroll-item';
+                productEl.innerHTML = `
+                    <div class="product-image">
+                        <i class="fas fa-flower" style="font-size: 3rem;"></i>
+                        ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+                    </div>
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-price">${product.price.toLocaleString()}₫</p>
+                    <p class="product-description">${product.description}</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" data-id="${product.id}">Thêm vào giỏ</button>
+                        <button class="wishlist-btn" data-id="${product.id}"><i class="far fa-heart"></i></button>
+                    </div>
+                `;
+                productScroll.appendChild(productEl);
+            });
+            
+            // Add event listeners to product buttons
+            document.querySelectorAll('.btn-primary').forEach(button => {
+                if (button.textContent.includes('Thêm vào giỏ')) {
+                    button.addEventListener('click', function() {
+                        const productId = parseInt(this.getAttribute('data-id'));
+                        addToCart(productId);
+                    });
+                }
+            });
+            
+            document.querySelectorAll('.wishlist-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    toggleWishlist(productId, this);
+                });
+            });
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Modal toggles
+            loginToggle.addEventListener('click', () => loginModal.style.display = 'flex');
+            cartToggle.addEventListener('click', () => {
+                renderCart();
+                cartModal.style.display = 'flex';
+            });
+            
+            // Close modals
+            closeLogin.addEventListener('click', () => loginModal.style.display = 'none');
+            closeCart.addEventListener('click', () => cartModal.style.display = 'none');
+            
+            // Close modals when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === loginModal) loginModal.style.display = 'none';
+                if (e.target === cartModal) cartModal.style.display = 'none';
+            });
+            
+            // Search functionality
+            searchToggle.addEventListener('click', () => {
+                searchContainer.style.display = searchContainer.style.display === 'block' ? 'none' : 'block';
+                if (searchContainer.style.display === 'block') {
+                    searchInput.focus();
+                }
+            });
+            
+            searchInput.addEventListener('input', handleSearch);
+            
+            // Contact form submission
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                alert(`Cảm ơn ${name}! Tin nhắn của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ lại với bạn sớm nhất.`);
+                this.reset();
+            });
+        }
+
+        // Setup infinity scroll with drag functionality
+        function setupInfinityScroll() {
+            const scrollContainer = document.getElementById('productScroll');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            
+            // Mouse events for dragging
+            scrollContainer.addEventListener('mousedown', (e) => {
+                isDown = true;
+                scrollContainer.classList.add('dragging');
+                startX = e.pageX - scrollContainer.offsetLeft;
+                scrollLeft = scrollContainer.scrollLeft;
+            });
+            
+            scrollContainer.addEventListener('mouseleave', () => {
+                isDown = false;
+                scrollContainer.classList.remove('dragging');
+            });
+            
+            scrollContainer.addEventListener('mouseup', () => {
+                isDown = false;
+                scrollContainer.classList.remove('dragging');
+            });
+            
+            scrollContainer.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - scrollContainer.offsetLeft;
+                const walk = (x - startX) * 2;
+                scrollContainer.scrollLeft = scrollLeft - walk;
+            });
+            
+            // Auto scroll for infinite effect
+            let autoScroll = true;
+            let scrollSpeed = 1;
+            
+            function autoScrollItems() {
+                if (autoScroll && !isDown) {
+                    scrollContainer.scrollLeft += scrollSpeed;
+                    
+                    // Reset to beginning when reaching the end
+                    if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 3) {
+                        scrollContainer.scrollLeft = 0;
+                    }
+                }
+                requestAnimationFrame(autoScrollItems);
+            }
+            
+            // Start auto scroll
+            autoScrollItems();
+            
+            // Pause auto scroll on hover
+            scrollContainer.addEventListener('mouseenter', () => {
+                autoScroll = false;
+            });
+            
+            scrollContainer.addEventListener('mouseleave', () => {
+                autoScroll = true;
+            });
+        }
+
+        // Add product to cart
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    quantity: 1
+                });
+            }
+            
+            updateCartCount();
+            
+            // Show confirmation
+            alert(`Đã thêm "${product.name}" vào giỏ hàng!`);
+        }
+
+        // Toggle product in wishlist
+        function toggleWishlist(productId, button) {
+            const product = products.find(p => p.id === productId);
+            const icon = button.querySelector('i');
+            
+            if (wishlist.includes(productId)) {
+                wishlist = wishlist.filter(id => id !== productId);
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                button.style.color = '';
+            } else {
+                wishlist.push(productId);
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                button.style.color = '#e74c3c';
+            }
+        }
+
+        // Update cart count display
+        function updateCartCount() {
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            cartCount.textContent = totalItems;
+        }
+
+        // Render cart items
+        function renderCart() {
+            cartItems.innerHTML = '';
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-center">Giỏ hàng của bạn đang trống</p>';
+                cartTotal.textContent = '0₫';
+                return;
+            }
+            
+            let total = 0;
+            
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                const cartItemEl = document.createElement('div');
+                cartItemEl.className = 'cart-item';
+                cartItemEl.innerHTML = `
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">${item.name}</div>
+                        <div class="cart-item-price">${item.price.toLocaleString()}₫</div>
+                    </div>
+                    <div class="cart-item-quantity">
+                        <button class="quantity-btn minus" data-id="${item.id}">-</button>
+                        <span>${item.quantity}</span>
+                        <button class="quantity-btn plus" data-id="${item.id}">+</button>
+                        <button class="remove-item" data-id="${item.id}"><i class="fas fa-trash"></i></button>
+                    </div>
+                `;
+                cartItems.appendChild(cartItemEl);
+            });
+            
+            cartTotal.textContent = `${total.toLocaleString()}₫`;
+            
+            // Add event listeners to cart buttons
+            document.querySelectorAll('.quantity-btn.minus').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    updateCartItemQuantity(productId, -1);
+                });
+            });
+            
+            document.querySelectorAll('.quantity-btn.plus').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    updateCartItemQuantity(productId, 1);
+                });
+            });
+            
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    removeFromCart(productId);
+                });
+            });
+        }
+
+        // Update cart item quantity
+        function updateCartItemQuantity(productId, change) {
+            const item = cart.find(item => item.id === productId);
+            
+            if (item) {
+                item.quantity += change;
+                
+                if (item.quantity <= 0) {
+                    removeFromCart(productId);
+                } else {
+                    updateCartCount();
+                    renderCart();
+                }
+            }
+        }
+
+        // Remove item from cart
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartCount();
+            renderCart();
+        }
+
+        // Handle search functionality
+        function handleSearch() {
+            const query = searchInput.value.toLowerCase();
+            searchResults.innerHTML = '';
+            
+            if (query.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+            }
+            
+            const filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(query) || 
+                product.description.toLowerCase().includes(query)
+            );
+            
+            if (filteredProducts.length > 0) {
+                filteredProducts.forEach(product => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'search-result-item';
+                    resultItem.textContent = product.name;
+                    resultItem.addEventListener('click', () => {
+                        searchInput.value = product.name;
+                        searchResults.style.display = 'none';
+                        // In a real app, you would navigate to the product page
+                        alert(`Đã tìm thấy: ${product.name}`);
+                    });
+                    searchResults.appendChild(resultItem);
+                });
+                searchResults.style.display = 'block';
+            } else {
+                searchResults.style.display = 'none';
+            }
+        }
+
+        // Login form submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            // In a real app, you would send this to a server
+            alert(`Đăng nhập thành công với email: ${email}`);
+            loginModal.style.display = 'none';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
